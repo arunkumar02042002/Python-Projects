@@ -36,7 +36,6 @@ class GameBoard:
             else:
                 print(v, end = "|")
 
-
 class Game:
     def game_start(self):
         self.controlBoard = GameBoard()
