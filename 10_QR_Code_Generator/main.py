@@ -30,7 +30,7 @@ class QR:
 # Define the main function
 def main():
     myqr = QR(size=30, padding=3)  # Create an instance of the QR class with specified size and padding
-    myqr.create_qr('qr.png', fg='green', bg='white')  # Generate a QR code with custom colors and save it as 'qr.png'
+    myqr.create_qr('qr.png', fg='black', bg='white')  # Generate a QR code with custom colors and save it as 'qr.png'
 
 # Entry point of the program
 if __name__ == '__main__':
