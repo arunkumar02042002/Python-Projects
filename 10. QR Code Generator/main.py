@@ -19,7 +19,7 @@ class QR:
             qr_image = self.qr.make_image(fill_color=fg, back_color=bg)
 
             # Save the QR code image in the current directory with the specified file name
-            file_path = f'./10_QR_Code_Generator/{file_name}'
+            file_path = f'./10. QR Code Generator/{file_name}'
             qr_image.save(file_path)
 
             print(f'Successfully Created! ({file_name})')  # Print a success message
