@@ -56,14 +56,14 @@ def check_in_common_password(password: str) -> str | None:
 # Define the main function for executing the program
 def main():
     print('Searching.....')
-    password: str = 'apple'
+    password: str = 'ajxe24'
 
     # Check if the password is in the common passwords list
     if match := check_in_common_password(password):
         print(match)
     else:
         # If not common, attempt to brute force the password
-        if match := brute_force(password, 5): 
+        if match := brute_force(password, 6, digits=True): 
             print(match)
         else:
             print("Can't crack!")
