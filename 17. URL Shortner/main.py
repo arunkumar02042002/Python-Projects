@@ -2,8 +2,12 @@ from typing import Final
 # Import the requests library for making HTTP requests
 import requests
 
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
 # Get your API key from here 'https://cutt.ly/'
-API_KEY: Final[str] = '71adb130de327aa8c16c6f33e9d2c05821e1f'
+API_KEY: Final[str] = os.getenv('URL_KEY')
 
 # Base URL of the link shortening service
 BASE_URL: Final[str] = 'https://cutt.ly/api/api.php'
